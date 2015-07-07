@@ -46,24 +46,67 @@
 
     <section class="site-section home" id="home">
   <h1 class="site-section-title home">COMING SOON</h1>
+
+  <!-- <div class="button-intro">我们是谁</div>
+  <div class="button-intro">我们有什么</div>
+  <div class="button-intro">我们做什么</div> -->
+  <!-- Nav tabs -->
+ <!--  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">我们是谁</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">我们有什么</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">我们做什么</a></li>
+  </ul>
+ -->
+  <div class="site-button-group">
+    <div class="active site-button-item" role="presentation">
+      <a href="#home" aria-controls="home" role="tab" data-toggle="tab">我们是谁</a>
+    </div>
+    <div class="site-button-item" role="presentation">
+      <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">我们有什么</a>
+    </div>
+    <div class="site-button-item" role="presentation">
+      <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">我们做什么</a>
+    </div>
+  </div>
+  
+
+ 
+  
 </section>
 
 <section class="site-section intro" id="intro">
-  <!-- <div class="container">
-    <h1 class="site-section-title">About me</h1>
-    <p>I'm Eric Koh, living in Shanghai, China.</p>
-    <p>I am a <em>front-end web developer</em> &amp; <em>web designer</em>, working with HTML, CSS and JavaScript.</p>
-    <p>This is my online home, where you’ll find links to my articles(<em>Chinese</em>), I am focusing mostly on HTML5, CSS3 and JavaScript.</p>
-    <p>My goal is to build fast, responsive websites which work today and in the future — on every device possible, be it a laptop, smartphone.</p>
-    <p>I do everything to bring the best experience to every user and device.</p>
-    <p>I learn new things daily to make me a faster, more efficient and productive developer, I believe in hard work and sharing what I know.</p>
-  </div> -->
-  
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+      <h4>全球首创的第三方商务社交平台</h4>
+      <h4>全球唯一的基于大数据的国际贸易B2B社交平台</h4>
+      <h4>全球唯一的主被动相结合的双向推广电商平台</h4>
+      <h4>国际贸易全新的革命性工具</h4>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+      <h4>拥有300万的产品、30万注册用户</h4>
+      <h4>2014年有接近600万的询盘，540多万海外买家，其中200多万包含邮箱</h4>
+      <h4>57个国家实时更新的海关数据；8.2亿多条、2TB的进出口交易记录</h4>
+      <h4>每天有全球17万个买家访问，170多万个页面浏览</h4>
+      <h4>2014年上海经信委12个双推平台之一；<br>2014年上海商委7个重点支持的中小企业国际市场拓展基金支持单位之一；<br>山东省商务厅首批授予的40个电子商务示范企业</h4>
+      <h4>拥有20多名跨国技术人员，总员工数过百；<br>拥有上海、临沂、济南、张家港、青岛、杭州等直营销售机构和30多个代理商分布中国</h4>
+      <h4>拥有1万多个付费用户、每年促成贸易撮合50多亿美元</h4>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="messages">
+      <h4>全球最大的B2B商务社交平台</h4>
+      <h4>找买家：帮您迅速联系数百万真实买家、实时监控他的商业动态</h4>
+      <h4>收询盘：让您接收每年600多万询盘、迅速开拓海外市场</h4>
+      <h4>交朋友：让您结交全球商业朋友、满足您社交及用人之需</h4>
+    </div>
+  </div>
 
   <div class="container-fluid">
   	<div class="row">
   		<div class="col-md-3">
-  			<img class="img-responsive" src='/assets/images/shipyard-supply-optimized.jpg' alt="">
+  			<div class="feature-img-wrapper">
+	  			<img class="img-responsive" src='/assets/images/shipyard-supply-optimized.jpg' alt="">
+	  		</div>
   			<h3 class="feature-title">海关数据</h3>
   			<div class="feature-title-line"></div>
   			<div class="feature-content">
@@ -71,7 +114,9 @@
   			</div>
   		</div>
   		<div class="col-md-3">
-  			<img class="img-responsive" src='/assets/images/shipyard-supply-optimized.jpg' alt="">
+  			<div class="feature-img-wrapper">
+	  			<img class="img-responsive" src='/assets/images/shipyard-supply-optimized.jpg' alt="">
+	  		</div>
   			<h3 class="feature-title">社交B2B</h3>
   			<div class="feature-title-line"></div>
   			<div class="feature-content">
@@ -79,7 +124,9 @@
   			</div>
   		</div>
   		<div class="col-md-3">
-  			<img class="img-responsive" src='/assets/images/shipyard-supply-optimized.jpg' alt="">
+  			<div class="feature-img-wrapper">
+	  			<img class="img-responsive" src='/assets/images/shipyard-supply-optimized.jpg' alt="">
+	  		</div>
   			<h3 class="feature-title">EDM代营销</h3>
   			<div class="feature-title-line"></div>
   			<div class="feature-content">
@@ -87,7 +134,9 @@
   			</div>
   		</div>
   		<div class="col-md-3">
-  			<img class="img-responsive" src='/assets/images/shipyard-supply-optimized.jpg' alt="">
+  			<div class="feature-img-wrapper">
+	  			<img class="img-responsive" src='/assets/images/shipyard-supply-optimized.jpg' alt="">
+	  		</div>
   			<h3 class="feature-title">金蜘蛛</h3>
   			<div class="feature-title-line"></div>
   			<div class="feature-content">
@@ -101,9 +150,33 @@
 		
 		<footer class="site-footer">
   <div class="container">
-    <p class="text-muted">Place sticky footer content here.</p>
+    <!-- <p class="text-muted">Place sticky footer content here.</p> -->
+    <div class="row">
+      <div class="col-md-4">
+        <img class="img-responsive" src='/assets/images/tradesparq-waimaogongshi_2.png' alt="">
+        <!-- <p class="text-muted">Place sticky footer content here.</p> -->
+      </div>
+      <div class="col-md-4">
+        <div>关于我们</div>
+        <div>新闻中心</div>
+        <div>产品服务</div>
+        <div>联系我们</div>
+        <div>常见问答</div>
+      </div>
+       <div class="col-md-4">
+        <div>客户反馈</div>
+        <!-- <div>博客</div> -->
+        <div>隐私保护</div>
+        <div>使用条款</div>
+        <div>GBI 登录</div>
+      </div>
+    </div>
+    <div class="footer-copyright text-muted text-center">Copyright © 2010-2015 Tradesparq Ltd. All Rights Reserved.</div>
   </div>
 </footer>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
   </body>
 
 </html>
