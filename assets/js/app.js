@@ -49,13 +49,31 @@ require.config({
 require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators', 'bootstrap'], function ($, ScrollMagic){
   // some code here
   $(function() {
-  	 console.log('hello');
-
   	 var controller = new ScrollMagic.Controller();
 
-  	 var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
+  	 var scene = new ScrollMagic.Scene({triggerElement: "#feature-box"})
 			// trigger a velocity opaticy animation
 			.setVelocity(".feature-box", {opacity: 1}, {duration: 1000})
+			.addIndicators() // add indicators (requires plugin)
+			.addTo(controller);
+
+
+		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-feature-title"})
+			// trigger a velocity opaticy animation
+			.setVelocity(".site-section-title.feature", {opacity: 1}, {duration: 1500})
+			// .setVelocity(".site-section-title.feature-sub", {opacity: 1}, {duration: 1500})
+			.addIndicators() // add indicators (requires plugin)
+			.addTo(controller);
+
+		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-feature-title"})
+			// trigger a velocity opaticy animation
+			.setVelocity(".site-section-title.feature-sub", {opacity: 1}, {duration: 2000})
+			.addIndicators() // add indicators (requires plugin)
+			.addTo(controller);
+
+		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-feature-content"})
+			// trigger a velocity opaticy animation
+			.setVelocity(".intro-wrapper", {opacity: 1}, {duration: 1800})
 			.addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
   });
