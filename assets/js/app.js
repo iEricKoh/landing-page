@@ -60,14 +60,14 @@ require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators',
 
 		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-feature-title"})
 			// trigger a velocity opaticy animation
-			.setVelocity(".site-section-title.feature", {opacity: 1}, {duration: 1500})
+			.setVelocity(".site-section-title.feature", {opacity: 1}, {duration: 1300})
 			// .setVelocity(".site-section-title.feature-sub", {opacity: 1}, {duration: 1500})
 			.addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 
 		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-feature-title"})
 			// trigger a velocity opaticy animation
-			.setVelocity(".site-section-title.feature-sub", {opacity: 1}, {duration: 2000})
+			.setVelocity(".site-section-title.feature-sub", {opacity: 1}, {duration: 1500})
 			.addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 
