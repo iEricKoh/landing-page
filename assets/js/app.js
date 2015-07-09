@@ -51,13 +51,6 @@ require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators',
   $(function() {
   	 var controller = new ScrollMagic.Controller();
 
-  	/* var scene = new ScrollMagic.Scene({triggerElement: "#feature-box"})
-			// trigger a velocity opaticy animation
-			.setVelocity(".feature-box", {opacity: 1}, {duration: 1000})
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);*/
-
-
 		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-intro"})
 			// trigger a velocity opaticy animation
 			.setVelocity(".site-section-title.intro", {opacity: 1}, {duration: 1300})
@@ -71,21 +64,15 @@ require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators',
 			.addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 
-		/*var scene = new ScrollMagic.Scene({triggerElement: "#trigger-feature-content"})
-			// trigger a velocity opaticy animation
-			.setVelocity(".intro-wrapper", {opacity: 1}, {duration: 1800})
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);*/
-
 		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-navbar"})
 			// trigger a velocity opaticy animation
-			.setVelocity(".site-navbar", {backgroundColor: '#000', backgroundColorAlpha: 0.85}, {duration: 800})
+			.setVelocity("#site-navbar", {backgroundColor: '#000', backgroundColorAlpha: 0.85}, {duration: 800})
 			.addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 
 		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-whoweare"})
 			// trigger a velocity opaticy animation
-			.setVelocity(".site-section.whoweare", {opacity: 1}, {duration: 800})
+			.setVelocity(".site-section.whoweare", {opacity: 1}, {duration: 700})
 			.addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 
