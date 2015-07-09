@@ -83,6 +83,12 @@ require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators',
 			.addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 
+		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-whoweare"})
+			// trigger a velocity opaticy animation
+			.setVelocity(".site-section.who-we-are", {opacity: 1}, {duration: 800})
+			.addIndicators() // add indicators (requires plugin)
+			.addTo(controller);
+
 
 
 		function scrollToElement(selector, time, verticalOffset) {
@@ -91,8 +97,9 @@ require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators',
 	    element = $(selector);
 	    offset = element.offset();
 	    offsetTop = offset.top + verticalOffset;
+	    console.log($('#navbar').height());
 	    $('html, body').animate({
-	        scrollTop: offsetTop
+	        scrollTop: offsetTop - $('#navbar').height()
 	    }, time);          
 		}
 
