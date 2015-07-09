@@ -58,18 +58,18 @@ require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators',
 			.addTo(controller);*/
 
 
-		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-what-we-do"})
+		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-intro"})
 			// trigger a velocity opaticy animation
 			.setVelocity(".site-section-title.feature", {opacity: 1}, {duration: 1300})
 			// .setVelocity(".site-section-title.feature-sub", {opacity: 1}, {duration: 1500})
 			.addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 
-/*		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-feature-title"})
+		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-intro"})
 			// trigger a velocity opaticy animation
 			.setVelocity(".site-section-title.feature-sub", {opacity: 1}, {duration: 1500})
 			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);*/
+			.addTo(controller);
 
 		/*var scene = new ScrollMagic.Scene({triggerElement: "#trigger-feature-content"})
 			// trigger a velocity opaticy animation
@@ -85,7 +85,7 @@ require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators',
 
 		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-whoweare"})
 			// trigger a velocity opaticy animation
-			.setVelocity(".site-section.who-we-are", {opacity: 1}, {duration: 800})
+			.setVelocity(".site-section.whoweare", {opacity: 1}, {duration: 800})
 			.addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 
@@ -99,12 +99,12 @@ require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators',
 	    offsetTop = offset.top + verticalOffset;
 	    console.log($('#navbar').height());
 	    $('html, body').animate({
-	        scrollTop: offsetTop - $('#navbar').height()
+	        scrollTop: offsetTop - ($('#navbar').height()/2)
 	    }, time);          
 		}
 
 		$('.site-arrow-down').click(function() {
-	    scrollToElement('#intro-tools');
+	    scrollToElement('#intro');
 		});
   });
 });
