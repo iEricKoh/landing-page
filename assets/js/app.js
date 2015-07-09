@@ -55,25 +55,25 @@ require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators',
 			// trigger a velocity opaticy animation
 			.setVelocity(".site-section-title.intro", {opacity: 1}, {duration: 1300})
 			// .setVelocity(".site-section-title.feature-sub", {opacity: 1}, {duration: 1500})
-			.addIndicators() // add indicators (requires plugin)
+			// .addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 
 		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-intro"})
 			// trigger a velocity opaticy animation
 			.setVelocity(".site-section-title.intro-sub", {opacity: 1}, {duration: 1500})
-			.addIndicators() // add indicators (requires plugin)
+			// .addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 
 		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-navbar"})
 			// trigger a velocity opaticy animation
 			.setVelocity("#site-navbar", {backgroundColor: '#000', backgroundColorAlpha: 0.85}, {duration: 800})
-			.addIndicators() // add indicators (requires plugin)
+			// .addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 
 		var scene = new ScrollMagic.Scene({triggerElement: "#trigger-whoweare"})
 			// trigger a velocity opaticy animation
 			.setVelocity(".site-section.whoweare", {opacity: 1}, {duration: 700})
-			.addIndicators() // add indicators (requires plugin)
+			// .addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
 
 
