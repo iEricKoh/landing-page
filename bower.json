@@ -1,0 +1,24 @@
+{
+  "name": "landing-page",
+  "version": "0.0.0",
+  "homepage": "https://github.com/iEricKoh/landing-page",
+  "authors": [
+    "EricKoh <EricKohx@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "Hover": "~2.0.2",
+    "font-awesome": "~4.3.0",
+    "scrollmagic": "~2.0.5",
+    "gsap": "~1.17.0",
+    "velocity": "~1.2.2"
+  }
+}

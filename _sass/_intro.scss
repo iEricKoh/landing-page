@@ -1,0 +1,95 @@
+// section -- intro
+%section-intro {
+	&.intro {
+		@include flex-align-item-center();
+		@include flex-justify-content-center();
+		@include flex-direction(column);
+		
+		padding: 10rem 2rem;
+		min-height: 100%;
+	  height: auto;
+
+		background-color: #fff;
+		@media (max-width: $screen-sm-max) {
+			padding: 5rem 2rem;
+		}
+	}
+}
+
+%section-title-intro {
+	&.intro {
+		font-weight: bold;
+		text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+		width: 100%;
+		margin: 0 0 5px;
+		text-align: center;
+		// opacity: 1;
+	}
+}
+%section-sub-title-intro {
+	&.intro-sub {
+		margin-top: 0;
+		width: 100%;
+		font-size: 2.0rem;
+		text-align: center;
+		color: #707070;
+		// opacity: 1;
+	}
+}
+
+.site-carousel {
+	margin: 4rem auto 3rem;
+	border-radius: 8px;
+	max-width: 700px;
+	@include box-shadow(1px 1px 2px rgba(0,0,0,0.5), -1px -1px 2px rgba(0,0,0,0.5));
+	img {
+		border-radius: 8px;
+	}
+	.carousel-caption {
+		left: 0;
+		right: 0;
+		font-size: 2.0rem;
+		background-color: rgba(0,0,0,0.5);
+	}
+	@media (max-width: $screen-sm-max) {
+		margin-left: -1.5rem;
+		margin-right: -1.5rem;
+		border-radius: 0;
+		img {
+			border-radius: 0;
+		}
+	}
+}
+
+.site-carousel-control {
+	border-radius: 8px;
+	@media (max-width: $screen-sm-max) {
+		border-radius: 0;
+	}
+}
+
+.section-carousel {
+	padding: 0 2rem 6rem;
+	@media (min-width: $screen-md-min) {
+		padding: 2rem;
+	}
+}
+
+.section-carousel-title {
+	margin: 0 0 5px;
+	width: 100%;
+	font-weight: bold;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+	text-align: center;
+	@media (min-width: $screen-md-min) {
+		font-size: 5.2rem;
+	}
+}
+
+.section-carousel-subtitle {
+	margin-top: 0;
+	width: 100%;
+	font-size: 2.0rem;
+	text-align: center;
+	color: #707070;
+}

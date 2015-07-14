@@ -1,0 +1,44 @@
+.site-navbar {
+	// background-color: darken(#2e3037, 2%);
+	// border-color: darken(#2e3037, 3%);
+	margin-bottom: 0;
+	border-color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0);
+	// background-color: rgba(16,16,16,0.85);
+	// border-color: rgba(16,16,16,0.85);
+
+	font-size: 1.6rem;
+	
+	li > a {
+		padding-top: 0;
+		padding-bottom: 0;
+		line-height: 70px;
+		@media (max-width: $screen-sm-max) {
+			line-height: 2;
+		}
+	}
+	.navbar-nav > li > a {
+		color: #fff;
+	}
+	.fa {
+		color: #fff;
+	}
+	.hvr-underline-from-center:before {
+		background-color: #D64541;
+	}
+}
+
+.site-brand {
+	@extend .pull-left;
+	margin-right: 3rem;
+	line-height: 70px;
+	@media (max-width: $screen-sm-max) {
+		margin-left: 2.5rem;
+	}
+}
+
+.nav-tel {
+	font-size: 1.8rem;
+}
+
+// $navbar-height: 65px;

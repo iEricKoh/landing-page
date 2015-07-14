@@ -1,0 +1,43 @@
+// section -- who we are
+%section-whoweare {
+	&.whoweare {
+		@include flex-align-item-center();
+		@include flex-justify-content-center();
+		@include flex-direction(row);
+
+		opacity: 0;
+
+		padding: 2rem 1rem;
+
+		height: auto;
+		min-height: 50%;
+	  
+		background-color: #33363b;
+		color: #fff;
+
+	  @media (max-width: $screen-sm-max) {
+	  	padding: 5rem 2rem;
+			@include flex-direction(column);
+		}
+	}
+}
+// section unit -- who we are
+%section-unit-whoweare {
+	&.whoweare {
+		img {
+			max-width: 400px;
+		}
+		@media (max-width: $screen-xs-max) {
+			img {
+				max-width: 100%;
+			}
+		}
+		> .content {
+			font-size: 3rem;
+			@media (max-width: $screen-xs-max) {
+				font-size: 1.8rem;
+				text-align: center;
+			}
+		}
+	}
+}
