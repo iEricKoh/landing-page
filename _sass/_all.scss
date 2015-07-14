@@ -43,7 +43,7 @@ body {
 
 	padding: 0;
 	width: 100%;
-	min-height: 60%;
+	min-height: 500px;
 
 	background-image: url("/assets/images/Imagem_Fortisx.jpg");
 	background-repeat: no-repeat;
@@ -89,6 +89,7 @@ body {
 
 	@media (min-width: $screen-md-min) {
 		font-size: 6.0rem;
+		margin-top: 3rem;
 	}
 }
 
@@ -388,6 +389,11 @@ body {
 
 .icon-green {
 	color: #00cd00;
+}
+
+.section-home-benefit {
+	margin: 1.5rem auto 0;
+	max-width: 600px;
 }
 
 
