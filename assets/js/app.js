@@ -27,6 +27,8 @@ require.config({
 require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators', 'bootstrap'], function ($, ScrollMagic){
   // some code here
   $(function() {
+  	$('[data-toggle="popover"]').popover();
+
   	 var controller = new ScrollMagic.Controller();
 
 		/*var scene = new ScrollMagic.Scene({triggerElement: "#trigger-intro"})
