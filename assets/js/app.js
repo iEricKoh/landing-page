@@ -27,6 +27,8 @@ require.config({
 require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators', 'bootstrap'], function ($, ScrollMagic){
   // some code here
   $(function() {
+  	$('[data-toggle="popover"]').popover();
+
   	 var controller = new ScrollMagic.Controller();
 
 		/*var scene = new ScrollMagic.Scene({triggerElement: "#trigger-intro"})
@@ -65,11 +67,16 @@ require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators',
 	    console.log($('#navbar').height());
 	    $('html, body').animate({
 	        scrollTop: offsetTop - ($('#navbar').height()/2)
-	    }, time);          
+	    }, time);
 		}
 
 		$('.site-arrow-down').click(function() {
 	    scrollToElement('#features');
 		});
+
+		$('a.qq-chat').on('click', function() {
+			$('iframe[allowtransparency="true"]').contents().find('div#launchBtn').click();
+		})
+
   });
 });
