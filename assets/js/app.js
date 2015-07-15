@@ -65,11 +65,16 @@ require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators',
 	    console.log($('#navbar').height());
 	    $('html, body').animate({
 	        scrollTop: offsetTop - ($('#navbar').height()/2)
-	    }, time);          
+	    }, time);
 		}
 
 		$('.site-arrow-down').click(function() {
 	    scrollToElement('#features');
 		});
+
+		$('a.qq-chat').on('click', function() {
+			$('iframe[allowtransparency="true"]').contents().find('div#launchBtn').click();
+		})
+
   });
 });
