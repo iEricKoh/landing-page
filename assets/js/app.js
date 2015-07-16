@@ -3,10 +3,10 @@ require.config({
 　		"jquery": "jquery.min",
 		"bootstrap": "bootstrap.min",
 		"TweenMax": "TweenMax.min",
-		"indicators": "debug.addIndicators",
+		// "indicators": "debug.addIndicators",
 		"velocity": "velocity.min",
-		"animationVelocity": "animation.velocity",
-		"scrollmagic": "ScrollMagic.js"
+		"animationVelocity": "animation.velocity.min",
+		"scrollmagic": "ScrollMagic.min.js"
 	},
 	shim: {
 　　'bootstrap': {
@@ -24,7 +24,7 @@ require.config({
 	}
 });
 
-require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', 'indicators', 'bootstrap'], function ($, ScrollMagic){
+require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', /*'indicators',*/ 'bootstrap'], function ($, ScrollMagic){
   // some code here
   $(function() {
   	$('[data-toggle="popover"]').popover();
