@@ -6,7 +6,7 @@ require.config({
 		// "indicators": "debug.addIndicators",
 		"velocity": "velocity.min",
 		"animationVelocity": "animation.velocity.min",
-		"scrollmagic": "ScrollMagic.min.js"
+		"ScrollMagic": "ScrollMagic.min"
 	},
 	shim: {
 　　'bootstrap': {
