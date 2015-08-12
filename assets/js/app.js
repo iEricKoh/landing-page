@@ -78,5 +78,7 @@ require(['jquery', 'ScrollMagic', 'TweenMax', 'animationVelocity', /*'indicators
 			$('iframe[allowtransparency="true"]').contents().find('div#launchBtn').click();
 		})
 
+	  $('[data-toggle="popover"]').tooltip()
+
   });
 });
