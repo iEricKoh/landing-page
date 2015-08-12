@@ -70,29 +70,29 @@ module.exports = (grunt) ->
       scrollmagic:
         files: [{
           expand: true
-          cwd: "bower_components/scrollmagic/scrollmagic/uncompressed/"
-          src: "ScrollMagic.js"
+          cwd: "bower_components/scrollmagic/scrollmagic/minified/"
+          src: "ScrollMagic.min.js"
           dest: "assets/js/"
         }]
       scrollmagicPluginsGSAP:
         files: [{
           expand: true
-          cwd: "bower_components/scrollmagic/scrollmagic/uncompressed/plugins/"
-          src: "animation.gsap.js"
+          cwd: "bower_components/scrollmagic/scrollmagic/minified/plugins/"
+          src: "animation.gsap.min.js"
           dest: "assets/js/"
         }]
       scrollmagicPluginsVelocity:
         files: [{
           expand: true
-          cwd: "bower_components/scrollmagic/scrollmagic/uncompressed/plugins/"
-          src: "animation.velocity.js"
+          cwd: "bower_components/scrollmagic/scrollmagic/minified/plugins/"
+          src: "animation.velocity.min.js"
           dest: "assets/js/"
         }]
       scrollmagicPluginsDebug:
         files: [{
           expand: true
-          cwd: "bower_components/scrollmagic/scrollmagic/uncompressed/plugins/"
-          src: "debug.addIndicators.js"
+          cwd: "bower_components/scrollmagic/scrollmagic/minified/plugins/"
+          src: "debug.addIndicators.min.js"
           dest: "assets/js/"
         }]
       requirejs:

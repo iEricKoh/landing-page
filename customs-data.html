@@ -4,71 +4,161 @@ title: Articles
 permalink: /customs-data/
 ---
 
-<section class="section">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-6">
-				<img class="img-responsive" src='{{ "/assets/images/customs-data-header.png" | prepend: site.baseurl }}' alt="">
-			</div>
-			<div class="col-md-6">
-				<h1 class="section-title">海关数据服务</h1>
-				<p class="section-content light-grey">通过关键词或者HS编码进行交易记录检索，<br>获取所有跟产品相关的交易数据，买家、卖家、重量等信息。</p>
-			</div>
+
+<section class="section-customs overview">
+	{% include header-customs.html %}
+	<div class="container">
+		<div class="section-customs-title">
+			<h1 class="section-title customs-header">海关数据服务</h1>
+			<p class="section-content customs-subtitle">通过关键词或者HS编码进行交易记录检索，<br>获取所有跟产品相关的交易数据，买家、卖家、重量等信息。</p>
 		</div>
+
+		<img class="img-responsive customs-img-search" src='{{ "/assets/images/flat_chrome-(1)_03.png" | prepend: site.baseurl }}' alt="">
 	</div>
+	<div class="img-shadow-bottom"></div>
+</section>
 
-	<section class="section-customs-flags">
-		<div class="text-center">
-			<h1 class="section-title sm underline">57国海关数据</h1>
-			<p class="section-content dark-grey mbn">美国、加拿大、墨西哥、智利、巴西、俄罗斯</p>
-			<p class="section-content dark-grey man">英国、韩国、巴基斯坦、乌克兰、西班牙、印度尼西亚</p>
-			<p class="section-content dark-grey">... ...</p>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
-						<img class="img-responsive mha" src='{{ "/assets/images/United-States-of-America.png" | prepend: site.baseurl }}' alt="">
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
-						<img class="img-responsive mha" src='{{ "/assets/images/Canada.png" | prepend: site.baseurl }}' alt="">
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
-						<img class="img-responsive mha" src='{{ "/assets/images/Argentina.png" | prepend: site.baseurl }}' alt="">
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
-						<img class="img-responsive mha" src='{{ "/assets/images/Mexico.png" | prepend: site.baseurl }}' alt="">
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
-						<img class="img-responsive mha" src='{{ "/assets/images/Chile.png" | prepend: site.baseurl }}' alt="">
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
-						<img class="img-responsive mha" src='{{ "/assets/images/Colombia.png" | prepend: site.baseurl }}' alt="">
-					</div>
+<!-- <div class="customs-features">
+	<h1 class="section-title sm">全球唯一的基于大数据的国际贸易B2B社交平台</h1>
+	<h1 class="section-content light-grey">57国海关数据实时更新、8.2亿多条进出口交易记录</h1>
+	<img class="img-responsive customs-img-feature" src='{{ "/assets/images/iMac-Flat-Mockup.png" | prepend: site.baseurl }}' alt="">
+</div> -->
 
-					<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
-						<img class="img-responsive mha" src='{{ "/assets/images/United-Kingdom.png" | prepend: site.baseurl }}' alt="">
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
-						<img class="img-responsive mha" src='{{ "/assets/images/Spain.png" | prepend: site.baseurl }}' alt="">
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
-						<img class="img-responsive mha" src='{{ "/assets/images/Russia.png" | prepend: site.baseurl }}' alt="">
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
-						<img class="img-responsive mha" src='{{ "/assets/images/Indonesia.png" | prepend: site.baseurl }}' alt="">
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
-						<img class="img-responsive mha" src='{{ "/assets/images/Korea-South.png" | prepend: site.baseurl }}' alt="">
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
-						<img class="img-responsive mha" src='{{ "/assets/images/Peru.png" | prepend: site.baseurl }}' alt="">
-					</div>
+<section class="section-customs features">
+	<h1 class="section-title sm">全球唯一的基于大数据的国际贸易B2B社交平台</h1>
+	<h1 class="section-content light-grey">57国海关数据实时更新、8.2亿多条进出口交易记录</h1>
+	<img class="img-responsive customs-img-feature" src='{{ "/assets/images/iMac-Flat-Mockup.png" | prepend: site.baseurl }}' alt="">
+</section>
+
+
+
+<section class="section-customs flags">
+	<div class="text-center">
+		<h1 class="section-title flags sm underline">57国海关数据</h1>
+		<p class="section-content dark-grey mbn">美国、加拿大、墨西哥、智利、巴西、俄罗斯</p>
+		<p class="section-content dark-grey man">英国、韩国、巴基斯坦、乌克兰、西班牙、印度尼西亚</p>
+		<p class="section-content dark-grey">... ...</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
+					<img class="img-responsive mha" src='{{ "/assets/images/United-States-of-America.png" | prepend: site.baseurl }}' alt="">
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
+					<img class="img-responsive mha" src='{{ "/assets/images/Canada.png" | prepend: site.baseurl }}' alt="">
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
+					<img class="img-responsive mha" src='{{ "/assets/images/Argentina.png" | prepend: site.baseurl }}' alt="">
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
+					<img class="img-responsive mha" src='{{ "/assets/images/Mexico.png" | prepend: site.baseurl }}' alt="">
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
+					<img class="img-responsive mha" src='{{ "/assets/images/Chile.png" | prepend: site.baseurl }}' alt="">
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
+					<img class="img-responsive mha" src='{{ "/assets/images/Colombia.png" | prepend: site.baseurl }}' alt="">
+				</div>
+
+				<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
+					<img class="img-responsive mha" src='{{ "/assets/images/United-Kingdom.png" | prepend: site.baseurl }}' alt="">
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
+					<img class="img-responsive mha" src='{{ "/assets/images/Spain.png" | prepend: site.baseurl }}' alt="">
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
+					<img class="img-responsive mha" src='{{ "/assets/images/Russia.png" | prepend: site.baseurl }}' alt="">
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
+					<img class="img-responsive mha" src='{{ "/assets/images/Indonesia.png" | prepend: site.baseurl }}' alt="">
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
+					<img class="img-responsive mha" src='{{ "/assets/images/Korea-South.png" | prepend: site.baseurl }}' alt="">
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 customs-flags">
+					<img class="img-responsive mha" src='{{ "/assets/images/Peru.png" | prepend: site.baseurl }}' alt="">
 				</div>
 			</div>
 		</div>
-		
-	</section>
+	</div>
+	
 </section>
 
+
+<div class="section-customs">
+	<h1 class="section-title sm text-center">除了海关数据，我们还有...</h1>
+	
+	<div class="customs-other-features">
+		<div class="container">
+			<div class="col-md-4">
+				<i class="fa fa-users"></i>
+			</div>
+			<div class="col-md-4">
+				<i class="fa fa-rocket"></i>
+			</div>
+			<div class="col-md-4">
+				<i class="fa fa-rocket"></i>
+			</div>
+			
+		</div>
+		<!-- <section class="why_split_cta">
+			<div class="left">
+				<div class="content">
+					<p>
+						社交B2B
+					</p>
+					<a href="/technology" class="btn-border">
+						了解更多
+					</a>
+				</div>
+			</div>
+			<div class="right">
+				<div class="content">
+					<p>
+						EDM代营销
+					</p>
+					<a href="/the-app" class="btn-border">
+						了解更多
+					</a>
+				</div>
+			</div>
+		</section> -->
+<!-- 		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<img class="img-responsive customs-img-features" src='{{ "/assets/images/features-social.jpg" | prepend: site.baseurl }}' alt="">
+				</div>
+				<div class="col-md-7">
+					<h3 class="customs-feature-title">社交B2B</h3>
+					<p class="customs-feature-desc">全新的B2B模式，增加了社交功能，让贸易变的更加轻松，转变销售思路和模式，变纯被动的营销推广模式，转变为被动和主动相结合的模式，直接添加已经注册的国外采购商为好友，发送站内信。</p>
+
+					<a class="btn btn-danger customs-btn-more" href="javascript:void(0)">了解更多 » </a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<img class="img-responsive customs-img-features" src='{{ "/assets/images/features-edm.jpg" | prepend: site.baseurl }}' alt="">
+				</div>
+				<div class="col-md-7">
+					<h3 class="customs-feature-title">EDM代营销</h3>
+					<p class="customs-feature-desc">没有业务，业务能力不强，没有资源，我们来帮你解决，EDM代营销，让你可以把外贸轻松做起来，只要给我们开发信，我们来帮您做业务开发，直接给到您最优质的国外询盘服务，把您的企业通过邮件推广到全世界。</p>
+
+					<a class="btn btn-danger customs-btn-more" href="javascript:void(0)">了解更多 » </a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<img class="img-responsive customs-img-features" src='{{ "/assets/images/features-spider.jpg" | prepend: site.baseurl }}' alt="">
+				</div>
+				<div class="col-md-7">
+					<h3 class="customs-feature-title">金蜘蛛</h3>
+					<p class="customs-feature-desc">最先进的爬虫技术，根据关键词、网址、公司名称等，在谷歌、雅虎等国际性的搜索引擎，直接抓取相关邮箱，解决您邮箱难题。</p>
+
+					<a class="btn btn-danger customs-btn-more" href="javascript:void(0)">了解更多 » </a>
+				</div>
+			</div>
+		</div> -->
+	</div>
+</div>
 
 
 
@@ -78,11 +168,7 @@ permalink: /customs-data/
 
 <!-- <img class="img-responsive" src='{{ "/assets/images/xxxx.jpg" | prepend: site.baseurl }}' alt=""> -->
 
-<div class="customs-features">
-		<h1 class="section-title sm underline">全球唯一的基于大数据的国际贸易B2B社交平台</h1>
-		<h1 class="section-sub-title light-grey">57国海关数据实时更新、8.2亿多条进出口交易记录</h1>
-		<img class="img-responsive" src='{{ "/assets/images/iMac-Flat-Mockup.png" | prepend: site.baseurl }}' alt="">
-	</div>
+
 
 
 <!-- 
