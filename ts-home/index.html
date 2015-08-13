@@ -34,9 +34,8 @@
 
 
   <body class="home">
-    <nav class="navbar navbar-inverse navbar-fixed-top ts-navbar-sub">
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top ts-navbar-sub">
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -44,10 +43,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <!-- <a class="navbar-brand" href="#">Brand</a> -->
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav ts-navbar-nav">
         <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
@@ -63,15 +60,32 @@
         <li><a href="#">English</a></li>
         <li><a href="#">中文</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+    </div>
+  </div>
+</nav> -->
 
 
 
 <nav class="navbar navbar-inverse navbar-fixed-top ts-navbar">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav ts-navbar-nav">
+        <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Products &amp; Services</a></li>
+        <li><a href="#">Free Customs Data</a></li>
+        <li><a href="#">Buyer Services</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">BGI Login</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right ts-navbar-nav">
+        <li><a href="#">English</a></li>
+        <li><a href="#">中文</a></li>
+      </ul>
+    </div>
+
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -79,38 +93,69 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="ts-navbar-brand" href="#">
+        <img width="135" src="/assets/images/logo_TS_darkBG_161w.png" alt="">
+      </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
       <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <div class="input-group">
+          <div class="input-group-btn">
+            <button class="btn btn-default dropdown-toggle navbar-form-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Shipments</a></li>
+            </ul>
+          </div><!-- /btn-group -->
+          <input class="form-control navbar-form-search" type="search" placeholder="Search for products or shipments" aria-label="...">
+        </div><!-- /input-group -->
+
+        <button type="submit" class="btn btn-danger"><i class="fa fa-search"></i> <strong class="hidden-xs hidden-sm">Search</strong></button>
       </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Join Free</a></li>
+      <ul class="nav navbar-nav navbar-right ts-navbar-right">
+        <li><a class="navbar-right-login" href="#">Login</a></li>
+        <li><a href="#">or</a></li>
+        <li class="navbar-right-join"><button class="btn btn-danger" href="#">Join Free</button></li>
       </ul>
     </div><!-- /.navbar-collapse -->
+    
+    <div class="visible-xs">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav ts-navbar-nav">
+          <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Products &amp; Services</a></li>
+          <li><a href="#">Free Customs Data</a></li>
+          <li><a href="#">Buyer Services</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">BGI Login</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right ts-navbar-nav">
+          <li><a href="#">English</a></li>
+          <li><a href="#">中文</a></li>
+        </ul>
+      </div>
+    </div>
   </div><!-- /.container-fluid -->
 </nav>
 
 <section class="home-intro">
-	<div class="container">
+	<div class="container" id="test">
 		<strong class="home-header">The Safest Place for Global Trade</strong>
 		<div class="home-sub-header">
-			<div class="home-sub-header-unit" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="hover"
-		 data-content="Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus.">
+			<div class="home-sub-header-unit" data-container=".home-sub-header" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-html="true"
+		 data-content="<p>Start by searching our immense database of products and companies</p><ul><li>Millions of products</li><li>12 million company profiles</li><li>820 million shipment records</li></ul>">
 				Search
 			</div>
-			<div class="home-sub-header-unit">
+			<div class="home-sub-header-unit" data-container=".home-sub-header" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-html="true"
+     data-content="<p>Connect with trade partners for references and real-time updates</p><ul><li>Filter companies by your connections</li><li>Get trusted referrals from your network</li><li>Receive real-time updates of supplier activity</li></ul>">
 				Connect
 			</div>
-			<div class="home-sub-header-unit">
+			<div class="home-sub-header-unit" data-container=".home-sub-header" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-html="true"
+     data-content="<p>Verify companies by their shipment history, community reviews, and network referrals</p><ul><li>820 million shipment records</li><li>Thousands of community reviews</li><li>Referrals from trusted people in your network</li></ul>">
 				Verify
 			</div>
 		</div>
@@ -119,7 +164,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 
   <div class="home-intro-footer">
     <div class="container">
-      <div class="home-clients-container">
+      <div class="home-container">
         <div class="row no-gutters">
           <div class="col-xs-4">
             <div class="home-clients-unit">
@@ -142,53 +187,147 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
   </div>
 </section>
 
-<div class="container">
-  <div class="home-clients-container text-center">
-    <div class="row no-gutters">
-      <div class="col-xs-4">
-        <div class="home-clients-body">
-          <div class="home-clients-content">
-            <h4>Suppliers</h4>
+
+<section class="our-clients">
+  <div class="container">
+    <div class="home-container">
+      <div class="row no-gutters our-clients-wrapper">
+        <div class="col-xs-4 our-clients-unit">
+          <div class="our-clients-content">
+            <h4><strong>Suppliers</strong></h4>
             <p>In a Tradesparq search, my product appears on page 1 within my network. On other sites it's buried on page 36.</p>
           </div>
           <button class="btn btn-default">Learn More</button>
         </div>
-      </div>
-      <div class="col-xs-4">
-        <div class="home-clients-body">
-          <div class="home-clients-content">
-            <h4>Buyers</h4>
+        <div class="col-xs-4 our-clients-unit">
+          <div class="our-clients-content">
+            <h4><strong>Buyers</strong></h4>
             <p>"We cut supplier search and verification time in half. Confidential ratings and team collaboration helped us source smarter."</p>
           </div>
-          <button class="btn btn-primary">Learn More</button>
+          <button class="btn btn-primary">Learn More</button>            
         </div>
-      </div>
-      <div class="col-xs-4">
-        <div class="home-clients-body">
-          <div class="home-clients-content">
-            <h4>Supply Chain</h4>
+        <div class="col-xs-4 our-clients-unit">
+          <div class="our-clients-content">
+            <h4><strong>Supply Chain</strong></h4>
             <p>Build your client base and online reputation; sell your trade services through referrals.</p>
           </div>
           <button class="btn btn-default">Learn More</button>
         </div>
       </div>
-    </div>
 
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        
-        <div class="home-signup-box">
-          <h4>Log in with your favorite service</h4>
+      <div class="home-signup-box">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <h4>Log in with your favorite service</h4>
+          </div>
+          <div class="col-md-8">
+            <a class="btn-extlogin" href="">
+              <div class="sprite sprite_s sprite-logo_facebook_s"></div>
+            </a>
+
+            <a class="btn-extlogin" href="">
+              <div class="sprite sprite_s sprite-logo_google_s"></div>
+            </a>
+
+            <a class="btn-extlogin" href="">
+              <div class="sprite sprite_s sprite-logo_yahoo_s"></div>
+            </a>
+
+            <a class="btn-extlogin" href="">
+              <div class="sprite sprite_s sprite-logo_linkedin_s"></div>
+            </a>
+
+            <a class="btn-extlogin" href="">
+              <div class="sprite sprite_s sprite-logo_qq_s"></div>
+            </a>
+
+            <a class="btn-extlogin" href="">
+              <div class="sprite sprite_s sprite-logo_sina_s"></div>
+            </a>
+
+            <a class="btn-extlogin" href="">
+              <div class="sprite sprite_s sprite-logo_winlive_s"></div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+
+
+
+
+<!-- <div class="container">
+  <div class="home-container">
+    <div class="row no-gutters text-center">
+      <div class="col-xs-4 home-clients-body">
+        <div class="home-clients-content">
+          <h4>Suppliers</h4>
+          <p>In a Tradesparq search, my product appears on page 1 within my network. On other sites it's buried on page 36.</p>
+        </div>
+        <button class="btn btn-default">Learn More</button>
+      </div>
+      <div class="col-xs-4 home-clients-body">
+        <div class="home-clients-content">
+          <h4>Buyers</h4>
+          <p>"We cut supplier search and verification time in half. Confidential ratings and team collaboration helped us source smarter."</p>
+        </div>
+        <button class="btn btn-primary">Learn More</button>
+      </div>
+      <div class="col-xs-4 home-clients-body">
+        <div class="home-clients-content">
+          <h4>Supply Chain</h4>
+          <p>Build your client base and online reputation; sell your trade services through referrals.</p>
+        </div>
+        <button class="btn btn-default">Learn More</button>
+      </div>
+    </div>
+
+    <div class="home-signup-box">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <h4>Log in with your favorite service</h4>
+        </div>
+        <div class="col-md-8">
+          <a class="btn-extlogin" href="">
+            <div class="sprite sprite_s sprite-logo_facebook_s"></div>
+          </a>
+
+          <a class="btn-extlogin" href="">
+            <div class="sprite sprite_s sprite-logo_google_s"></div>
+          </a>
+
+          <a class="btn-extlogin" href="">
+            <div class="sprite sprite_s sprite-logo_yahoo_s"></div>
+          </a>
+
+          <a class="btn-extlogin" href="">
+            <div class="sprite sprite_s sprite-logo_linkedin_s"></div>
+          </a>
+
+          <a class="btn-extlogin" href="">
+            <div class="sprite sprite_s sprite-logo_qq_s"></div>
+          </a>
+
+          <a class="btn-extlogin" href="">
+            <div class="sprite sprite_s sprite-logo_sina_s"></div>
+          </a>
+
+          <a class="btn-extlogin" href="">
+            <div class="sprite sprite_s sprite-logo_winlive_s"></div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
         
 
 <section class="home-section">
   <div class="container">
-    <div class="home-clients-container">
+    <div class="home-container">
       <div class="text-center">
         <h2 class="home-title">HOW IT WORKS</h2>
         <h4>Our system, explained in <strong>3 easy steps</strong></h4>
