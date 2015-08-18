@@ -41,13 +41,13 @@
         <li><a href="#">About</a></li>
         <li><a href="#">News</a></li>
         <li><a href="#">Product &amp; Services</a></li>
-        <li><a href="#">Free Customs Data</a></li>
+        <li><a href="#freecustomsdata">Free Customs Data</a></li>
         <li><a href="#">Buyer Services</a></li>
         <li><a href="#">Testimonials</a></li>
         <li><a href="#">FAQ</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="#" target="_blank">GBI Login</a></li>
+        <li><a href="http://gbi.tradesparq.com.cn" target="_blank">GBI Login</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right ts-navbar-nav">
         <li><a class="active" href="#">English</a></li>
@@ -65,11 +65,10 @@
       </button>
       <a class="ts-navbar-brand" href="#">
         <img width="110" src="/assets/images/logo_TS_darkBG_161w.png" alt="Tradesparq">
-        <!-- <img class="visible-xs visible-sm" width="45" src="/assets/images/tradesparq_logo.png" alt="Tradesparq"> -->
       </a>
     </div>
 
-    <form class="navbar-form navbar-left" role="search">
+    <form class="navbar-form navbar-left ts-navbar-form" role="search">
       <div class="input-group">
         <div class="input-group-btn">
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-dropdown-value="products" class="f_dropdown_text">Products</span> <span class="caret"></span></button>
@@ -78,31 +77,36 @@
             <li><a class="f_dropdown_type" data-dropdown-type="shipments" href="javascript:void(0);">Shipments</a></li>
           </ul>
         </div><!-- /btn-group -->
-        <input class="form-control navbar-form-search" type="search" id="f_dropdown_keyword" name="f_dropdown_keyword" aria-label="..." placeholder="" value="">
-        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+
+        <div class="input-group navbar-search-group">
+          <input class="form-control navbar-form-search" type="search" id="f_dropdown_keyword" name="f_dropdown_keyword" aria-label="..." placeholder="" value="">
+          <span class="input-group-btn">
+            <button class="btn btn-danger f_dropdown_search" type="submit"><i class="fa fa-search"></i> <strong class="hidden-xs hidden-sm search-literal">Search</strong></button>
+          </span>
+        </div>
       </div><!-- /input-group -->
     </form>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-left hidden-xs hidden-sm" role="search">
-        <div class="input-group">
-          <div class="input-group-btn">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-dropdown-value="products" class="f_dropdown_text">Products</span> <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li><a class="f_dropdown_type" data-dropdown-type="products" href="javascript:void(0);">Products</a></li>
-              <li><a class="f_dropdown_type" data-dropdown-type="shipments" href="javascript:void(0);">Shipments</a></li>
-            </ul>
-          </div><!-- /btn-group -->
-          <input class="form-control navbar-form-search" type="search" id="f_dropdown_keyword" name="f_dropdown_keyword" aria-label="..." placeholder="" value="">
-        </div><!-- /input-group -->
-
-        <button type="submit" class="btn btn-danger f_dropdown_search"><i class="fa fa-search"></i> <strong class="hidden-xs hidden-sm">Search</strong></button>
-      </form>
       <ul class="nav navbar-nav navbar-right ts-navbar-right">
-        <li><a class="navbar-right-login fn-login" href="javascript:void(0);">Login</a></li>
-        <li><a href="#">or</a></li>
-        <li class="navbar-right-join"><button class="btn btn-danger fn-join" href="javascript:void(0);">Join Free</button></li>
+        <li class="navbar-right-login navbar-right-item"><a class="fn-login" href="javascript:void(0);">Login</a></li>
+        <li class="hidden-xs navbar-right-item"><a href="javascript:void(0);">or</a></li>
+        <li class="navbar-right-join navbar-right-item">
+          <button class="btn btn-danger hidden-xs fn-join" href="javascript:void(0);">Signup</button>
+          <a class="visible-xs fn-join" href="javascript:void(0);">Signup</a>
+        </li>
+
+        <li class="visible-xs navbar-right-item"><a href="#">About</a></li>
+        <li class="visible-xs navbar-right-item"><a href="#">News</a></li>
+        <li class="visible-xs navbar-right-item"><a href="#">Product &amp; Services</a></li>
+        <li class="visible-xs navbar-right-item"><a href="#freecustomsdata">Free Customs Data</a></li>
+        <li class="visible-xs navbar-right-item"><a href="#">Buyer Services</a></li>
+        <li class="visible-xs navbar-right-item"><a href="#">Testimonials</a></li>
+        <li class="visible-xs navbar-right-item"><a href="#">FAQ</a></li>
+        <li class="visible-xs navbar-right-item"><a href="#">Contact</a></li>
+        <li class="visible-xs navbar-right-item"><a href="#">Blog</a></li>
+        <li class="visible-xs navbar-right-item"><a href="#" target="_blank">GBI Login</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -184,8 +188,8 @@
 
 <section class="home-intro">
 	<div class="container" id="test">
-		<strong class="home-header">The Safest Place for Global Trade</strong>
-		<div class="home-sub-header">
+		<strong class="section-hero-title">The Safest Place for Global Trade</strong>
+		<div class="section-hero-subheader">
 			<div class="home-sub-header-unit" data-container=".home-sub-header" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-html="true"
 		 data-content="<p>Start by searching our immense database of products and companies</p><ul><li>Millions of products</li><li>12 million company profiles</li><li>820 million shipment records</li></ul>">
 				Search
